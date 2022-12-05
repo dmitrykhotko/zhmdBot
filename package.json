@@ -1,0 +1,37 @@
+{
+  "name": "zhmdBot",
+  "description": "Zhmd Bot",
+  "license": "ISC",
+  "author": {
+    "name": "Dmitry Khotko",
+    "email": "dmitry.khotko@gmail.com"
+  },
+  "scripts": {
+    "build": "rm -rf dist; tsc",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix",
+    "lint:script": "scriptlint --fix && npmPkgJsonLint .",
+    "start": "nodemon dist/index.js",
+    "watch": "tsc -w"
+  },
+  "config": {},
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "nodemon": "^2.0.20",
+    "npm-package-json-lint": "^5.1.0",
+    "prettier": "^2.2.1",
+    "scriptlint": "^2.1.2",
+    "ts-loader": "^9.2.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.3.2"
+  },
+  "private": true
+}
